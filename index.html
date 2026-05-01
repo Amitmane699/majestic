@@ -124,16 +124,10 @@
 ============================================================ -->
 <section class="hero" id="home">
 
-  <!-- Background Video -->
-  <div class="hero-vw">
-    <video autoplay muted loop playsinline>
-      <source src="assets/video/hero.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <!-- Hero Content -->
-  <div class="hero-body">
-    <div class="container">
+  <!-- DESKTOP: Split layout — text left, video right -->
+  <div class="hero-desktop">
+    <!-- Left: Content -->
+    <div class="hero-left">
       <div class="hero-text">
         <div class="h-badge">
           <span class="h-badge-line"></span>
@@ -154,9 +148,45 @@
         </div>
       </div>
     </div>
+    <!-- Right: Video -->
+    <div class="hero-right">
+      <video autoplay muted loop playsinline class="hero-vid-desktop">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-right-overlay"></div>
+    </div>
   </div>
 
-  <!-- Stats Bar -->
+  <!-- MOBILE: Full screen video with overlay text -->
+  <div class="hero-mobile">
+    <div class="hero-mob-vw">
+      <video autoplay muted loop playsinline class="hero-vid-mobile">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-mob-overlay"></div>
+    </div>
+    <div class="hero-mob-content">
+      <div class="h-badge">
+        <span class="h-badge-line"></span>
+        Leading Real Estate Developer in Pune
+        <span class="h-badge-line"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hl">Shaping</span>
+        <span class="hl">Pune's</span>
+        <span class="hl">Skylines</span>
+      </h1>
+      <p class="hero-desc">
+        From our humble beginnings to becoming a name synonymous with excellence, innovation, and trust — visionaries shaping the future of Pune.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-gold">Explore Projects <i class="fas fa-arrow-right"></i></a>
+        <a href="#about" class="btn-outline-w">Our Story</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Bar (both views) -->
   <div class="hero-stats-bar">
     <div class="container">
       <div class="hsb-grid">
